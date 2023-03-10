@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(37, 37, 37);
+    background-image: url(images/segarally.jpeg);
+    font-size: 1.05em;
+    background-position-y: -500px;
+}
+
+header {
+    background: black;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+}
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: black;
+    font-family:'Montserrat'; /* si no esta instalada puede ser descargada facilmente de google */
+}
+
+.navbar a:hover{
+    background: #333;
+}
