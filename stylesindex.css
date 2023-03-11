@@ -1,9 +1,9 @@
-* {
+body {
     padding: 0;
     margin: 0;
     background-color: rgb(37, 37, 37);
     background-image: url(images/sinandpunishment.jpeg);
-    font-size: 1.05em;
+    font-family:'Courier New', Courier, monospace;
 }
 
 header {
@@ -12,6 +12,7 @@ header {
 
 .navbar {
     overflow: hidden;
+    z-index: 0;
     background-color: #333;
     position: fixed;
     top: 0;
@@ -27,9 +28,46 @@ header {
     padding: 14px 16px;
     text-decoration: none;
     background: black;
+    font-size: 1.25em;
     font-family:'Montserrat'; /* si no esta instalada puede ser descargada facilmente de google */
+}
+
+.navbar a#logo{
+    background-image: url(images/logoDS.png);
+    background-size: cover;
+    width: 150px;
+    height: 24px;
+    margin-right: 15px;
 }
 
 .navbar a:hover{
     background: #333;
+}
+
+.welcome{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    min-width: 500px;
+    border: 1px solid white;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.welcome h1{
+    font-size: 3em;
+    margin: 40px;
+}
+
+.welcome p{
+    margin: 50px;
+    font-size: 1.4em;
+}
+
+.welcome img{
+    margin-bottom: 10px;
 }
