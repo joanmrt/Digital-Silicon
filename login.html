@@ -4,15 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styleslogin.css" rel="stylesheet" type="text/css" media="all">
+    <link href="stylesindex.css" rel="stylesheet" type="text/css" media="all">
     <title>Digital Silicon - Login</title>
     <link rel="icon" type="image/x-icon" href="images/glitch.ico">
 </head>
-<body>
+<body style="background-image:url(images/segarally.jpeg); background-position-y: -500px;">
     <div class="navbar">
         <a href="index.html" id="logo"></a>
         <a href="coleccion.html">Colección</a>
         <a href="login.html">Login</a>
     </div>
+    <form action="/action_page.php" method="post">
+        <label for="name">Usuario:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" id="pass" name="pass">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+        <br>
+        <label for="country">País:</label>
+        <select id="country" name="country">
+            <option value="es">España</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            <option value="fr">Francia</option>
+            <option value="us">Estados Unidos</option>
+        </select>
+        <br>
+        <label for="birthday">Fecha de nacimiento:</label>
+        <input type="date" id="birthday" name="birthday" required>
+        <br>
+        <input type="checkbox" id="email_check" name="email_check" value="checked">
+        <label for="email_check">Quiero recibir correos cuando esta página se actualice.</label><br>
+       
+        <div class="buttons">
+            <label for="reset"></label>
+            <input type="reset" id="reset" name="reset" value="RESET">
+            <label for="submit"></label>
+            <input type="submit" id="login" name="login" value="LOGIN">
+        </div>
+    </form>
 </body>
 </html>
