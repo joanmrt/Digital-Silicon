@@ -210,7 +210,11 @@ form input:hover{
 }
 
 #wii.consola{
-    border-color: #209de6;
+    border-color: #35acf1;
+}
+
+#ps2.consola{
+    border-color: #2f00ff;
 }
 
 .grid{
@@ -222,9 +226,14 @@ form input:hover{
 
 .juego{
     border: 4px solid white;
+    border-radius: 5px;
     width: 20%;
-    flex: 1 0 calc(33.33% - 10px);
+    flex: 1 0 calc(25% - 10px);
     text-align: center;
+}
+
+.consola h1{
+    font-size: 3em;
 }
 
 .juego img{
@@ -240,5 +249,8 @@ form input:hover{
     }
     .welcome{
         width: 90%;
+    }
+    .juego{
+        flex: 1 0 calc(33.33% - 10px);
     }
 }
