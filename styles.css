@@ -213,6 +213,10 @@ form input:hover{
     border-color: #2f00ff;
 }
 
+#gba.consola{
+    border-color: #6200ff;
+}
+
 .grid{
     display: flex;
     flex-wrap: wrap;
@@ -226,6 +230,8 @@ form input:hover{
     width: 20%;
     flex: 1 0 calc(25% - 10px);
     text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .consola h1{
