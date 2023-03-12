@@ -7,9 +7,6 @@ body {
     font-family:'Courier New', Courier, monospace;
 }
 
-header {
-    background: black;
-}
 
 /*Navbar*/
 .navbar {
@@ -240,6 +237,59 @@ form input:hover{
     object-fit: scale-down;
 }
 
+/*Sobre mi*/
+
+.sobremi{
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    border: 1px solid white;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.sobremi header{
+    border-bottom: 1px solid white;
+}
+
+.sobremi nav{
+    float: left;
+    width: 20%;
+    margin: 10px;
+}
+
+.sobremi table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){
+    background-color: rgba(8, 8, 8, 0.9);
+}
+
+td, th{
+    text-align: left;
+    border: 1px solid white;
+    padding: 15px;
+}
+
+td:hover{
+    background-color: rgba(10, 10, 10, 0.9)
+}
+
+section::after {
+    display: flexbox;
+  }
+
+.sobremi article{
+    float: left;
+    width: 75%;
+    margin: 10px;
+}
 /*Esconder navbar si la web es muy pequeña*/
 @media only screen and (max-width: 768px) {
 
@@ -251,5 +301,11 @@ form input:hover{
     }
     .juego{
         flex: 1 0 calc(33.33% - 10px);
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .sobremi nav, .sobremi article{
+        width: 96%;
     }
 }
