@@ -60,6 +60,7 @@ header {
     transition: all 0.3s ease;
     transform: translateX(-200px);
     z-index: 1;
+    position: fixed;
 }
 
 .sidebar a{
@@ -117,7 +118,7 @@ header {
 }
 /*Mostrar sidebar si la web es muy pequeña*/
 @media only screen and (min-width: 768px){
-    .container{
+    .sidebar, .toggle-button{
         display: none;
     }
 }
@@ -175,8 +176,60 @@ form input, form select{
     margin-top: 30px;
 }
 
+.buttons input{
+    width: 80px;
+    height: 40px;
+}
+
 form input:hover{
     background-color: #c5c5c5;
+}
+
+/*Coleccion*/
+
+.coleccion{
+    position:relative;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 90%;
+    border: 1px solid white;
+    color: white;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+
+.consola{
+    width:80%;
+    margin-left: 9.5%;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#wii.consola{
+    border-color: #209de6;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 2%;
+}
+
+.juego{
+    border: 4px solid white;
+    width: 20%;
+    flex: 1 0 calc(33.33% - 10px);
+    text-align: center;
+}
+
+.juego img{
+    margin-top: 25px;
+    object-fit: scale-down;
 }
 
 /*Esconder navbar si la web es muy pequeña*/
