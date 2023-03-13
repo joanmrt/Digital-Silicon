@@ -277,6 +277,11 @@ tr:nth-child(even){
     background-color: rgba(8, 8, 8, 0.9);
 }
 
+tr:first-child{
+    background-color: rgba(255, 145, 0, 0.9);
+    color: black;
+}
+
 td, th{
     text-align: left;
     border: 1px solid white;
